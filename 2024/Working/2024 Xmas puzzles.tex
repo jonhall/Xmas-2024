@@ -1,0 +1,262 @@
+\documentclass[10pt]{article}
+
+\usepackage{multicol}
+
+\title{ Xmas Puzzle, 2024 }
+\author{Jon G.~Hall}
+%%Uncomment for date and version
+%\date{\footnotesize\today; Version: \version}
+
+%%For integration with git/versioning
+\usepackage[
+	nowatermark,
+]{gitstatus}
+%%For hyperrefs
+\usepackage[allcolors=blue]{hyperref}
+
+\usepackage[textsize=tiny,obeyFinal]{todonotes}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathspec}
+
+%%Localisation
+\usepackage[english]{babel}
+
+%%Either wordlike or geometry but not both
+%\usepackage{wordlike}
+\usepackage[
+margin=2cm %%wide margins all round
+]{geometry}
+
+
+%%Fonts stuff
+%%Explicit Italic, etc, for Texifier's old format
+\usepackage{mathspec}
+\setmainfont[
+	Mapping=tex-text,
+	BoldFont={* Bold},
+	ItalicFont={* Italic},
+	BoldItalicFont={* Bold Italic},
+%%Turns off ligatures
+%	Ligatures=NoCommon,
+%	Ligatures=NoRare,
+]{Baskerville}
+\setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
+
+%%Graphics
+\usepackage{graphicx}
+\graphicspath{/Figures/} % Default path is <root directory>/Figures
+
+
+%%for fancy page headings. Uncomment \pagestyle below to include poetix in footer
+\usepackage{fancyhdr}
+\fancyhead[L,C,R]{} 
+\fancyfoot[L]{\poetix}
+\fancyfoot[C]{\thepage} 
+%\pagestyle{fancy}
+
+\usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
+%%Uncomment for italicised quotes
+%\renewcommand{\mktextquote}[6]{#1\emph{#2}#4#3#6#5}
+%\renewcommand{\mkblockquote}[4]{#1\emph{#2}#4#3}
+
+
+%%Bibtex stuff
+\usepackage[
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true,
+]{biblatex}
+\addbibresource{MY-BIB-CLEAN.bib}
+\addbibresource{collatedBib.bib}
+
+%%Ensure bibliography always included, even if \end{document} early
+\AtEndDocument{\printbibliography}
+
+
+%%Migrating to tabularray as for tabular
+\RequirePackage{tabularray}
+\UseTblrLibrary{varwidth}%%For itemize in entries
+\UseTblrLibrary{booktabs}%%For lines in entries
+\newcommand{\zerobox}[1]{\setbox0=\vbox{#1}}
+\NewColumnType{Z}{Q[cmd=\zerobox,wd=0pt]}%%Add column type that deletes a column
+
+
+%%Set up page look
+%%Page look
+\usepackage{parskip}
+\usepackage{setspace}
+
+
+
+%%\\doublespacing
+%\usepackage{calc}%%So that calulations on lengths work
+%\usepackage[textheight=26\baselineskip+10pt]{geometry}
+
+
+
+%%For inline enums
+\usepackage[inline,shortlabels]{enumitem}
+
+\usepackage{cancel}
+\begin{document}
+\maketitle
+
+\begin{multicols}{4}
+
+\newcommand{\w}[2]{#1}
+\section*{Puzzles}
+
+
+
+\begin{enumerate}[label=\arabic*.]
+    % Level 1: Easy
+    \item 7 \w D{ays}  of the \w W{}
+     \item 12 \w M{}  in a \w Y{}
+     \item 4 \w S{}  on a \w T{}
+     \item 5 \w F{}  on a \w H{}
+     \item 3 \w BM{}
+    
+    % Level 2: Moderate
+    \item 88 \w K{}  on a \w P{}
+     \item 9\!\!\!$\backslash$8 \w P{}  in the \w SS{}
+     \item 18 \w H{}  on a \w GC{}
+     \item 7 \w C{}  of the \w R{}
+     \item 6 \w W{}  of \w H{}  the \w E{}
+     
+    % Level 3: Challenging
+    \item 24 \w H{}  in a \w D{}
+     \item 206 \w B{}  in the \w H{}  B
+    \item 13 the \w SPN{}
+     \item 20 \w FP{}  in a \w P{}
+     \item 3 \w L{}  on a \w T{}
+     
+    % Level 4: Difficult
+    \item 8 \w T{}  on an \w O{}
+     \item 16 \w T{}  on \w TO{}
+     \item 13 \w B{}  in a \w BD{}
+     \item 54 \w C{}  in a \w D{}  (WJ)
+    \item 204 F, 360 \w E{}  on a \w G{reat} \w D{isnub}\w D{irhombidodecahedron}
+
+    \item 5 \w R{}  in the \w O{}
+     
+    % Level 5: Expert
+    \item 15 \w P{}  in a \w R{}  T
+    \item 64 \w S{}  on a \w CB{}
+     \item 3 \w W{}  on a \w T{}
+     \item 29 \w D{}  in \w F{}  in a \w LY{}
+     \item 90 \w D{}  in a \w RA{}
+     
+    % Level 6: Hard
+    \item 3 \w M{}  of a \w B{}
+     \item 16 \w O{}  in a \w P{}
+     \item 7 \w W{}  of the \w A{}  W
+    \item 6 \w S{}  in a \w H{}
+     \item 5 \w D{}  in a \w ZC{}
+     
+    % Level 7: Very Hard
+    \item 1 \w H{}  on a \w U{}
+     \item 40 \w T{}  in the \w OT{}
+     \item 11 \w P{}  in a \w F{}
+     \item 4 \w Q{}  in a \w D{}
+     \item 52 \w W{}  in a \w Y{}
+     
+    % Level 8: Tricky
+    \item 9 \w L{}  of a \w C{}
+     \item 14 \w L{}  in a \w S{}
+     \item 50 \w S{}  on the \w AF{}
+     \item 3 \w C{}  in the \w H{}
+     \item 1000 \w W{}  that a \w P{}  is \w W{}
+     
+    % Level 9: Obscure
+    \item 6 \w F{}  under
+    \item 30 \w P{}  on a \w D{}
+     \item 15 \w M{}  on a \w D{}  M \w C{}
+     \item 8 \w S{}  in a \w O{}
+     \item 5 \w S{}  in a \w P{}
+     
+    % Level 10: Expert
+    \item 4 \w H{}  of the \w A{}
+     \item 10 \w Y{}  in a \w D{}
+     \item 6 \w F{}  on an \w I{}  C
+    \item 7 \w B{}  of \w S{}
+     \item 366 \w D{}  in a \w LY{}
+     
+    % Level 11: Brain Twisters
+    \item 3 \w C{}  in a \w O{}
+     \item 21 \w G{}  of \w S{}
+     \item 31 \w B{}  in \w D{}
+     \item 9 \w M{}  of \w P{}
+     \item 4 \w C{}  in a \w W{}
+     
+    % Level 12: Niche Knowledge
+    \item 221 \w B{}  B \w S{}
+     \item 10 \w C{}  of \w C{}
+     \item 1 \w G{}  for \w H{}  M
+    \item 7 \w H{}  of \w R{}
+     \item 5 \w G{}  in the \w P{}
+     
+    % Level 13: Cryptic
+    \item 6 \w F{}  of \w S{}
+     \item 3 \w S{}  in a \w T{}
+     \item 1 \w B{}  at \w W{}
+     \item 64 \w C{}  on a \w R{}
+     \item 500 \w P{}  of \w C{}
+     
+    % Level 14: Esoteric
+    \item 32 \w T{}  in \w H{}  M
+    \item 12 \w S{}  of the \w Z{}
+     \item 27 \w C{}  in \w N{}
+     \item 42 \w G{}  of \w I{}
+     \item 3 \w W{}  in \w T{}
+     
+    % Level 15: Obscure Challenge
+    \item 365 \w D{}  in an \w O{}  Y
+    \item 4 \w W{}  on a \w S{}
+     \item 5 \w I{}  in a \w S{}
+     \item 1 \w R{}  in a \w L{}  B
+    \item 8 \w B{}  in the \w S{}
+     
+    % Level 16: True Experts Only
+    \item 7 \w C{}  in the \w H{}
+     \item 3 \w F{}  in a \w B{}
+     \item 1 \w M{}  of \w D{}
+     \item 13 \w B{}  in a \w B{}
+     \item 1440 \w M{}  in a \w D{}
+     
+    % Level 17: Impossible Tier
+    \item 6 \w F{}  in a \w T{}
+     \item 1 \w P{}  in the \w W{}
+     \item 5280 \w F{}  in a \w M{}
+     \item 40 \w D{}  and \w N{}  of \w N{}
+     \item 3 \w C{}  in a \w M{}  T
+    
+    % Level 18: Insanely Difficult
+    \item 0 \w D{}  in \w Z{}
+     \item 10 \w L{}  in an \w A{}  S
+    \item 365.25 \w D{}  in a \w Y{}
+     \item 13 \w L{}  of the \w J{}
+     \item 9 \w D{}  in a \w Y{}  C
+    
+    % Level 19: Final Boss
+    \item 6 \w P{}  of the \w D{}
+     \item 1 \w H{}  of \w I{}
+     \item 7 \w S{}  of the \w U{}
+     \item 1 \w A{}  for the \w O{}
+     \item 0 \w I{}  in \w P{}
+     
+    % Adding the final five puzzles
+    % Level 20: Insanely Difficult (continued)
+    \item 3 \w L{}  in a \w T{}  B
+    \item 11 \w P{}  in \w C{}
+     \item 1 \w S{}  for \w M{}
+     \item 31 \w G{}  in a \w G{}  F
+    \item 6 \w C{}  in the \w H{}
+     
+\end{enumerate}
+
+\end{multicols}
+
+\end{document}

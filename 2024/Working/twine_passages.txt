@@ -1,0 +1,85 @@
+
+:: Passage 1
+<<set $currentPassage = 1>>
+<<set $puzzlesCompleted = false>>
+
+**Passage 1**
+
+
+    **Puzzle:** 7 D of the W
+    <<link "Reveal Answer">>
+        7 Days of the Week
+    <</link>>
+    
+
+<<if $puzzlesCompleted>>
+    **All puzzles complete! Passage 1 is now marked as complete.**
+<</if>>
+
+:: Passage 2
+<<set $currentPassage = 2>>
+<<set $puzzlesCompleted = false>>
+
+**Passage 2**
+
+
+    **Puzzle:** 12 M in a Y
+    <<link "Reveal Answer">>
+        12 Months in a Year
+    <</link>>
+    
+
+<<if $puzzlesCompleted>>
+    **All puzzles complete! Passage 2 is now marked as complete.**
+<</if>>
+
+:: Passage 3
+<<set $currentPassage = 3>>
+<<set $puzzlesCompleted = false>>
+
+**Passage 3**
+
+
+    **Puzzle:** 4 S on a T
+    <<link "Reveal Answer">>
+        4 Sides on a Triangle
+    <</link>>
+    
+
+<<if $puzzlesCompleted>>
+    **All puzzles complete! Passage 3 is now marked as complete.**
+<</if>>
+
+:: Passage 4
+<<set $currentPassage = 4>>
+<<set $puzzlesCompleted = false>>
+
+**Passage 4**
+
+
+    **Puzzle:** 5 F on a H
+    <<link "Reveal Answer">>
+        5 Fingers on a Hand
+    <</link>>
+    
+
+<<if $puzzlesCompleted>>
+    **All puzzles complete! Passage 4 is now marked as complete.**
+<</if>>
+
+:: Passage 5
+<<set $currentPassage = 5>>
+<<set $puzzlesCompleted = false>>
+
+**Passage 5**
+
+
+    **Puzzle:** 88 K on a P
+    <<link "Reveal Answer">>
+        88 Keys on a Piano
+    <</link>>
+    
+
+<<if $puzzlesCompleted>>
+    **All puzzles complete! Passage 5 is now marked as complete.**
+<</if>>

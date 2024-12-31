@@ -1,0 +1,2233 @@
+:: Start
+[[Available Puzzles]]
+
+:: Puzzle 1
+Solve this puzzle: 1 is not a P N<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1 is not a prime number">>
+            <p id="feedback">Correct! Puzzle 1 is complete.</p>
+            <p><b>Your clue is:</b> The 12 days of Christmas</p>
+            <<run setup.puzzles.find(p => p.number == 1).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1
+Solve this puzzle: 1 B at W<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1 bell at westminster">>
+            <p id="feedback">Correct! Puzzle 1 is complete.</p>
+            <p><b>Your clue is:</b> Neil, is that you?</p>
+            <<run setup.puzzles.find(p => p.number == 1).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1
+Solve this puzzle: 1 H on a U<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1 horn on a unicorn">>
+            <p id="feedback">Correct! Puzzle 1 is complete.</p>
+            <p><b>Your clue is:</b> Fly, you fools!</p>
+            <<run setup.puzzles.find(p => p.number == 1).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1
+Solve this puzzle: 1 G S for M<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1 giant step for mankind">>
+            <p id="feedback">Correct! Puzzle 1 is complete.</p>
+            <p><b>Your clue is:</b> Widow surrounds North</p>
+            <<run setup.puzzles.find(p => p.number == 1).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1
+Solve this puzzle: 1 R to R T A<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1 ring to rule them all">>
+            <p id="feedback">Correct! Puzzle 1 is complete.</p>
+            <p><b>Your clue is:</b> uch alad</p>
+            <<run setup.puzzles.find(p => p.number == 1).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1
+Solve this puzzle: 1 P in a P T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1 partridge in a pear tree">>
+            <p id="feedback">Correct! Puzzle 1 is complete.</p>
+            <p><b>Your clue is:</b> Shakespeare would have no problem with this, His answer would be poetic bliss.</p>
+            <<run setup.puzzles.find(p => p.number == 1).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 2
+Solve this puzzle: 2 L in a R C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "2 lines in a rhyming couplet">>
+            <p id="feedback">Correct! Puzzle 2 is complete.</p>
+            <p><b>Your clue is:</b> Ice</p>
+            <<run setup.puzzles.find(p => p.number == 2).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 2
+Solve this puzzle: 2 M S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "2 much salad">>
+            <p id="feedback">Correct! Puzzle 2 is complete.</p>
+            <p><b>Your clue is:</b> Some 2s are a couple</p>
+            <<run setup.puzzles.find(p => p.number == 2).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 2
+Solve this puzzle: 2 P, N and S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "2 pole, north and south">>
+            <p id="feedback">Correct! Puzzle 2 is complete.</p>
+            <p><b>Your clue is:</b> rides even rot hers</p>
+            <<run setup.puzzles.find(p => p.number == 2).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 2
+Solve this puzzle: 2 L on a D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "2 legs on a duck">>
+            <p id="feedback">Correct! Puzzle 2 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 2).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 2
+Solve this puzzle: 2 T D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "2 turtle doves">>
+            <p id="feedback">Correct! Puzzle 2 is complete.</p>
+            <p><b>Your clue is:</b> It’s big, it’s called Ben.</p>
+            <<run setup.puzzles.find(p => p.number == 2).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 B M<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 blind mice">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> rosses</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 C C in the H E<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 colors cones in the human eye">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> um er i cal, on key? um, er, o log y</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 D of S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 dimensions of space">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> , Now!</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 F H<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 french hens">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> Before Einstein, anyway</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 F H in a B B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 fingers holes in a bowling ball">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> all et</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 L on a T L<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 lights on a traffic light">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> Or it might be 3</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 C on the I F<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 colours on the italian flag">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> an overly sensitive or easily offended person</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 N V of a M T in P N<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 numerical value of a monkey trap in pythagorean numerology">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> State AR</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 S in a T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 stooges in a trio">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> Or Yoyo, or Yoda</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 3
+Solve this puzzle: 3 W on a T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "3 wheels on a tricycle">>
+            <p id="feedback">Correct! Puzzle 3 is complete.</p>
+            <p><b>Your clue is:</b> lag</p>
+            <<run setup.puzzles.find(p => p.number == 3).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 C B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 calling birds">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> Shall I compare thee to a summers day?</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 C in a W<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 corners in a window">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 C on the U F<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 crosses on the union flag">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> It's good news</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 H of the A<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 horsemen of the apocalypse">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> Could call puzzle currency into question?</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 L in Y<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 letters in yoga">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> It’s not spelled owels</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 Q in a D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 quarters in a dollar">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> DBDDBS</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 S on a T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 sides on a triangle">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> That’s a strike</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 4
+Solve this puzzle: 4 W on an E C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "4 wheels on an estate car">>
+            <p id="feedback">Correct! Puzzle 4 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 4).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5
+Solve this puzzle: 5 F on a H<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5 fingers on a hand">>
+            <p id="feedback">Correct! Puzzle 5 is complete.</p>
+            <p><b>Your clue is:</b> the Torah and the book of Joshua</p>
+            <<run setup.puzzles.find(p => p.number == 5).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5
+Solve this puzzle: 5 G in the P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5 gospels in the pentateuch">>
+            <p id="feedback">Correct! Puzzle 5 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 5).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5
+Solve this puzzle: 5 G R<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5 gold rings">>
+            <p id="feedback">Correct! Puzzle 5 is complete.</p>
+            <p><b>Your clue is:</b> It's cold down here. No, it’s hot</p>
+            <<run setup.puzzles.find(p => p.number == 5).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5
+Solve this puzzle: 5 R in the O<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5 rings in the olympics">>
+            <p id="feedback">Correct! Puzzle 5 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 5).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5
+Solve this puzzle: 5 L in the A are V<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5 letters in the alphabet are vowels">>
+            <p id="feedback">Correct! Puzzle 5 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 5).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5
+Solve this puzzle: 5 S in a P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5 sides in a pentagon">>
+            <p id="feedback">Correct! Puzzle 5 is complete.</p>
+            <p><b>Your clue is:</b> P scooted</p>
+            <<run setup.puzzles.find(p => p.number == 5).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 C in the H<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 chapters in the hexateuch">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 F in a T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 faces in a tetrahedron">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 P on a S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 points on a snowflake">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> And less, shortly</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 F on an C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 faces on an cube">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 F U<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 feet under">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 G A<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 geese a-laying">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 S in a G<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 strings in a guitar">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> Ills</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 S on a C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 sides on a cube">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 6
+Solve this puzzle: 6 W of H the E<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "6 wives of henry the eighth">>
+            <p id="feedback">Correct! Puzzle 6 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 6).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 C in our P C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 characters in our post code">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> Int’ Rio, you say?</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 B for 7 B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 brides for seven brothers">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 C in the H M<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 candles in the hanukkah menorah">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 C of the R<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 colors of the rainbow">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 D of the W<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 days of the week">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 H of R<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 hills of rome">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 S A<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 swans a-swimming">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 W of the A W<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 wonders of the ancient world">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> This was true until 2006</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 8
+Solve this puzzle: 8 B in a B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "8 bits in a byte">>
+            <p id="feedback">Correct! Puzzle 8 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 8).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 8
+Solve this puzzle: 8 M A<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "8 maids a-milking">>
+            <p id="feedback">Correct! Puzzle 8 is complete.</p>
+            <p><b>Your clue is:</b> A rhyming band?</p>
+            <<run setup.puzzles.find(p => p.number == 8).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 8
+Solve this puzzle: 8 P in the S S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "8 planets in the solar system">>
+            <p id="feedback">Correct! Puzzle 8 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 8).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 8
+Solve this puzzle: 8 S in an O<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "8 sides in an octagon">>
+            <p id="feedback">Correct! Puzzle 8 is complete.</p>
+            <p><b>Your clue is:</b> On cloud nine</p>
+            <<run setup.puzzles.find(p => p.number == 8).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 8
+Solve this puzzle: 8 T on an O<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "8 tentacles on an octopus">>
+            <p id="feedback">Correct! Puzzle 8 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 8).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 9
+Solve this puzzle: 9 L D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "9 ladies dancing">>
+            <p id="feedback">Correct! Puzzle 9 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 9).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 9
+Solve this puzzle: 9 L of a C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "9 lives of a cat">>
+            <p id="feedback">Correct! Puzzle 9 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 9).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 9
+Solve this puzzle: 9 M of P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "9 muses of poetry">>
+            <p id="feedback">Correct! Puzzle 9 is complete.</p>
+            <p><b>Your clue is:</b> But we don’t talk about that</p>
+            <<run setup.puzzles.find(p => p.number == 9).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 9
+Solve this puzzle: 9 P in the S S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "9 planets in the solar system">>
+            <p id="feedback">Correct! Puzzle 9 is complete.</p>
+            <p><b>Your clue is:</b> Or that</p>
+            <<run setup.puzzles.find(p => p.number == 9).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 10
+Solve this puzzle: 10 C of C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "10 commandments of christianity">>
+            <p id="feedback">Correct! Puzzle 10 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 10).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 10
+Solve this puzzle: 10 L A<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "10 lords a-leaping">>
+            <p id="feedback">Correct! Puzzle 10 is complete.</p>
+            <p><b>Your clue is:</b> Not hungry, no.</p>
+            <<run setup.puzzles.find(p => p.number == 10).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 10
+Solve this puzzle: 10 L in an A S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "10 layers in an atmosphere stratum">>
+            <p id="feedback">Correct! Puzzle 10 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 10).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 10
+Solve this puzzle: 10 Y in a D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "10 years in a decade">>
+            <p id="feedback">Correct! Puzzle 10 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 10).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 11
+Solve this puzzle: 11 P in a C T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "11 players in a cricket team">>
+            <p id="feedback">Correct! Puzzle 11 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 11).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 11
+Solve this puzzle: 11 P in a F T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "11 players in a football team">>
+            <p id="feedback">Correct! Puzzle 11 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 11).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 11
+Solve this puzzle: 11 P P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "11 pipers piping">>
+            <p id="feedback">Correct! Puzzle 11 is complete.</p>
+            <p><b>Your clue is:</b> #3’s the best</p>
+            <<run setup.puzzles.find(p => p.number == 11).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 12
+Solve this puzzle: 12 A M<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "12 angry men">>
+            <p id="feedback">Correct! Puzzle 12 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 12).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 12
+Solve this puzzle: 12 D D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "12 drummers drumming">>
+            <p id="feedback">Correct! Puzzle 12 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 12).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 12
+Solve this puzzle: 12 E in a D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "12 eggs in a dozen">>
+            <p id="feedback">Correct! Puzzle 12 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 12).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 12
+Solve this puzzle: 12 M in a Y<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "12 months in a year">>
+            <p id="feedback">Correct! Puzzle 12 is complete.</p>
+            <p><b>Your clue is:</b> Born, Italy, 1949</p>
+            <<run setup.puzzles.find(p => p.number == 12).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 12
+Solve this puzzle: 12 S of the Z<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "12 signs of the zodiac">>
+            <p id="feedback">Correct! Puzzle 12 is complete.</p>
+            <p><b>Your clue is:</b> tripes</p>
+            <<run setup.puzzles.find(p => p.number == 12).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 12
+Solve this puzzle: 12 D of C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "12 days of christmas">>
+            <p id="feedback">Correct! Puzzle 12 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 12).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 13
+Solve this puzzle: 13 S on the U S F<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "13 stripes on the united states flag">>
+            <p id="feedback">Correct! Puzzle 13 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 13).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 14
+Solve this puzzle: 14 L in a S S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "14 lines in a shakespearian sonnet">>
+            <p id="feedback">Correct! Puzzle 14 is complete.</p>
+            <p><b>Your clue is:</b> Eat less, shortly</p>
+            <<run setup.puzzles.find(p => p.number == 14).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 15
+Solve this puzzle: 15 P in a R T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "15 players in a rugby team">>
+            <p id="feedback">Correct! Puzzle 15 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 15).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 16
+Solve this puzzle: 16 G O S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "16 going on seventeen">>
+            <p id="feedback">Correct! Puzzle 16 is complete.</p>
+            <p><b>Your clue is:</b> Rams of Oul</p>
+            <<run setup.puzzles.find(p => p.number == 16).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 16
+Solve this puzzle: 16 O in a P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "16 ounces in a pound">>
+            <p id="feedback">Correct! Puzzle 16 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 16).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 18
+Solve this puzzle: 18 H on a G C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "18 holes on a golf course">>
+            <p id="feedback">Correct! Puzzle 18 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 18).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 20
+Solve this puzzle: 20 A R by the B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "20 albums released by the beatles">>
+            <p id="feedback">Correct! Puzzle 20 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 20).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 21
+Solve this puzzle: 21 G of S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "21 grams of soul">>
+            <p id="feedback">Correct! Puzzle 21 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 21).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 21
+Solve this puzzle: 21 J S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "21 jump street">>
+            <p id="feedback">Correct! Puzzle 21 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 21).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 23
+Solve this puzzle: 23 P of C in the H B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "23 pairs of chromosomes in the human body">>
+            <p id="feedback">Correct! Puzzle 23 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 23).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 24
+Solve this puzzle: 24 C in P G<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "24 carats in pure gold">>
+            <p id="feedback">Correct! Puzzle 24 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 24).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 24
+Solve this puzzle: 24 H in a D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "24 hours in a day">>
+            <p id="feedback">Correct! Puzzle 24 is complete.</p>
+            <p><b>Your clue is:</b> Ask in any ice-cream shop</p>
+            <<run setup.puzzles.find(p => p.number == 24).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 27
+Solve this puzzle: 27 C in N<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "27 countries in nato">>
+            <p id="feedback">Correct! Puzzle 27 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 27).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 28
+Solve this puzzle: 28 D L<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "28 days later">>
+            <p id="feedback">Correct! Puzzle 28 is complete.</p>
+            <p><b>Your clue is:</b> Jokers to the right…</p>
+            <<run setup.puzzles.find(p => p.number == 28).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 29
+Solve this puzzle: 29 D in F in a L Y<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "29 days in february in a leap year">>
+            <p id="feedback">Correct! Puzzle 29 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 29).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 31
+Solve this puzzle: 31 B R F<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "31 baskin robbins flavors">>
+            <p id="feedback">Correct! Puzzle 31 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 31).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 32
+Solve this puzzle: 32 T in H M<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "32 teeth in human mouth">>
+            <p id="feedback">Correct! Puzzle 32 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 32).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 40
+Solve this puzzle: 40 C in the O T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "40 chapters in the old testament">>
+            <p id="feedback">Correct! Puzzle 40 is complete.</p>
+            <p><b>Your clue is:</b> Film ours, not real ones</p>
+            <<run setup.puzzles.find(p => p.number == 40).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 50
+Solve this puzzle: 50 F D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "50 first dates">>
+            <p id="feedback">Correct! Puzzle 50 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 50).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 50
+Solve this puzzle: 50 P for a B on a D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "50 points for a bullseye on a dartboard">>
+            <p id="feedback">Correct! Puzzle 50 is complete.</p>
+            <p><b>Your clue is:</b> Doesn't buy much sausage these days</p>
+            <<run setup.puzzles.find(p => p.number == 50).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 50
+Solve this puzzle: 50 S on the A F<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "50 stars on the american flag">>
+            <p id="feedback">Correct! Puzzle 50 is complete.</p>
+            <p><b>Your clue is:</b> Doesn’t buy much salami these days</p>
+            <<run setup.puzzles.find(p => p.number == 50).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 52
+Solve this puzzle: 52 C in a D (W J)<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "52 cards in a deck (without jokers)">>
+            <p id="feedback">Correct! Puzzle 52 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 52).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 52
+Solve this puzzle: 52 W in a Y<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "52 weeks in a year">>
+            <p id="feedback">Correct! Puzzle 52 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 52).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 54
+Solve this puzzle: 54 C in a D (W J)<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "54 cards in a deck (with jokers)">>
+            <p id="feedback">Correct! Puzzle 54 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 54).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 64
+Solve this puzzle: 64 S on a C B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "64 squares on a chess board">>
+            <p id="feedback">Correct! Puzzle 64 is complete.</p>
+            <p><b>Your clue is:</b> No sh*t Sherlock</p>
+            <<run setup.puzzles.find(p => p.number == 64).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 7
+Solve this puzzle: 7 C in the R<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "7 colors in the rainbow">>
+            <p id="feedback">Correct! Puzzle 7 is complete.</p>
+            <p><b>Your clue is:</b> Give me an A!</p>
+            <<run setup.puzzles.find(p => p.number == 7).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 88
+Solve this puzzle: 88 K on a P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "88 keys on a piano">>
+            <p id="feedback">Correct! Puzzle 88 is complete.</p>
+            <p><b>Your clue is:</b> What’s a codex?</p>
+            <<run setup.puzzles.find(p => p.number == 88).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 90
+Solve this puzzle: 90 D in a R A<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "90 degrees in a right angle">>
+            <p id="feedback">Correct! Puzzle 90 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 90).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 100
+Solve this puzzle: 100 P in a P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "100 pennies in a pound">>
+            <p id="feedback">Correct! Puzzle 100 is complete.</p>
+            <p><b>Your clue is:</b> Trinity, what was that number again?</p>
+            <<run setup.puzzles.find(p => p.number == 100).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 100
+Solve this puzzle: 100 C in an I E<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "100 centesimi in an italian euro">>
+            <p id="feedback">Correct! Puzzle 100 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 100).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 100
+Solve this puzzle: 100 Z in a G<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "100 zeroes in a googleplex">>
+            <p id="feedback">Correct! Puzzle 100 is complete.</p>
+            <p><b>Your clue is:</b> Intellectual property software</p>
+            <<run setup.puzzles.find(p => p.number == 100).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 127
+Solve this puzzle: 127 H<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "127 hours">>
+            <p id="feedback">Correct! Puzzle 127 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 127).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 169
+Solve this puzzle: 169 = T S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "169 = thirteen squared">>
+            <p id="feedback">Correct! Puzzle 169 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 169).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 206
+Solve this puzzle: 206 B in the H B<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "206 bones in the human body">>
+            <p id="feedback">Correct! Puzzle 206 is complete.</p>
+            <p><b>Your clue is:</b> His son, Christian, was very upset.</p>
+            <<run setup.puzzles.find(p => p.number == 206).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 221
+Solve this puzzle: 221 B S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "221 baker street">>
+            <p id="feedback">Correct! Puzzle 221 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 221).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 300
+Solve this puzzle: 300 S<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "300 spartans">>
+            <p id="feedback">Correct! Puzzle 300 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 300).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 365
+Solve this puzzle: 365 D in an O Y<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "365 days in an ordinary year">>
+            <p id="feedback">Correct! Puzzle 365 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 365).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 365
+Solve this puzzle: 365.25 D in a Y<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "365.25 days in a year">>
+            <p id="feedback">Correct! Puzzle 365 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 365).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 366
+Solve this puzzle: 366 D in a L Y<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "366 days in a leap year">>
+            <p id="feedback">Correct! Puzzle 366 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 366).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 440
+Solve this puzzle: 440 H for T<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "440 hertz for tuning">>
+            <p id="feedback">Correct! Puzzle 440 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 440).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 500
+Solve this puzzle: 500 P of a C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "500 pages of a codex">>
+            <p id="feedback">Correct! Puzzle 500 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 500).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1000
+Solve this puzzle: 1000 W that a P is W<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1000 words that a picture is worth">>
+            <p id="feedback">Correct! Puzzle 1000 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 1000).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1440
+Solve this puzzle: 1440 M in a D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1440 minutes in a day">>
+            <p id="feedback">Correct! Puzzle 1440 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 1440).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 1685
+Solve this puzzle: 1685 the Y that J S B D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "1685 the year that johann sebastian bach died">>
+            <p id="feedback">Correct! Puzzle 1685 is complete.</p>
+            <p><b>Your clue is:</b> Flew off</p>
+            <<run setup.puzzles.find(p => p.number == 1685).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 2001
+Solve this puzzle: 2001 A S O<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "2001 a space odyssey">>
+            <p id="feedback">Correct! Puzzle 2001 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 2001).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5280
+Solve this puzzle: 5280 F in a M<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5280 feet in a mile">>
+            <p id="feedback">Correct! Puzzle 5280 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 5280).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 71282
+Solve this puzzle: 71282 is the Z for M P<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "71282 is the zipcode for madison parish">>
+            <p id="feedback">Correct! Puzzle 71282 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 71282).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 86164
+Solve this puzzle: 86164.0905 S in a S D<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "86164.0905 seconds in a sidereal day">>
+            <p id="feedback">Correct! Puzzle 86164 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 86164).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 5550690
+Solve this puzzle: 5550690 1st P N T in T M<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "5550690 1st phone number traced in the matrix">>
+            <p id="feedback">Correct! Puzzle 5550690 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 5550690).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>
+
+
+:: Puzzle 43252003274489900000
+Solve this puzzle: 43252003274489856000 S of an O R C<br>
+<<textbox "$answer" "" placeholder="Type your answer here">>
+<<button "Submit">>
+    <<replace "#feedback">>
+        <<if $answer.trim().toLowerCase() === "43252003274489856000 states of an original rubric's cube">>
+            <p id="feedback">Correct! Puzzle 43252003274489900000 is complete.</p>
+            <p><b>Your clue is:</b> No clue available.</p>
+            <<run setup.puzzles.find(p => p.number == 43252003274489900000).isSolved = true>>
+            [[Back to Available Puzzles->Available Puzzles]]
+        <<else>>
+            <p id="feedback">Incorrect. Try again!</p>
+        <</if>>
+    <</replace>>
+<</button>>
+<div id="feedback"></div>

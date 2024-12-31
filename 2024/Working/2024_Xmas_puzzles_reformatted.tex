@@ -1,0 +1,258 @@
+\documentclass[10pt]{article}
+
+\usepackage{multicol}
+
+\title{ Xmas Puzzle, 2024 }
+\author{Jon G.~Hall}
+%%Uncomment for date and version
+%\date{\footnotesize\today; Version: \version}
+
+%%For integration with git/versioning
+\usepackage[
+	nowatermark,
+]{gitstatus}
+%%For hyperrefs
+\usepackage[allcolors=blue]{hyperref}
+
+\usepackage{ragged2e}
+
+\usepackage[textsize=tiny,obeyFinal]{todonotes}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathspec}
+
+%%Localisation
+\usepackage[english]{babel}
+
+%%Either wordlike or geometry but not both
+%\usepackage{wordlike}
+\usepackage[
+margin=2cm %%wide margins all round
+]{geometry}
+
+
+%%Fonts stuff
+%%Explicit Italic, etc, for Texifier's old format
+\usepackage{mathspec}
+\setmainfont[
+	Mapping=tex-text,
+	BoldFont={* Bold},
+	ItalicFont={* Italic},
+	BoldItalicFont={* Bold Italic},
+%%Turns off ligatures
+%	Ligatures=NoCommon,
+%	Ligatures=NoRare,
+]{Baskerville}
+\setmathfont(Latin)[Scale=MatchLowercase]{BentonSans Book}
+
+%%Graphics
+\usepackage{graphicx}
+\graphicspath{/Figures/} % Default path is <root directory>/Figures
+
+
+%%for fancy page headings. Uncomment \pagestyle below to include poetix in footer
+\usepackage{fancyhdr}
+\fancyhead[L,C,R]{} 
+\fancyfoot[L]{\poetix}
+\fancyfoot[C]{\thepage} 
+%\pagestyle{fancy}
+
+\usepackage[threshold=1]{csquotes} %threshold in lines for blockquotes
+%%Uncomment for italicised quotes
+%\renewcommand{\mktextquote}[6]{#1\emph{#2}#4#3#6#5}
+%\renewcommand{\mkblockquote}[4]{#1\emph{#2}#4#3}
+
+
+%%Bibtex stuff
+\usepackage[
+	style=authoryear,
+	autocite=inline,
+	sortcites,
+	backref=true,
+]{biblatex}
+\addbibresource{MY-BIB-CLEAN.bib}
+\addbibresource{collatedBib.bib}
+
+%%Ensure bibliography always included, even if \end{document} early
+\AtEndDocument{\printbibliography}
+
+
+%%Migrating to tabularray as for tabular
+\RequirePackage{tabularray}
+\UseTblrLibrary{varwidth}%%For itemize in entries
+\UseTblrLibrary{booktabs}%%For lines in entries
+\newcommand{\zerobox}[1]{\setbox0=\vbox{#1}}
+\NewColumnType{Z}{Q[cmd=\zerobox,wd=0pt]}%%Add column type that deletes a column
+
+
+%%Set up page look
+%%Page look
+\usepackage{parskip}
+\usepackage{setspace}
+
+
+
+%%\\doublespacing
+%\usepackage{calc}%%So that calulations on lengths work
+%\usepackage[textheight=26\baselineskip+10pt]{geometry}
+
+
+
+%%For inline enums
+\usepackage[inline,shortlabels]{enumitem}
+
+\usepackage{cancel}
+\begin{document}
+\maketitle
+
+\RaggedRight
+\def\columnseprule{0.4pt}
+
+\begin{multicols}{4}
+
+\section*{Puzzles}
+
+\newcommand{\w}[2]{#1\underline{\hspace{0.5cm}}}
+\renewcommand{\w}[2]{#1#2}
+
+\begin{description}
+    \item 0 \w D{egrees} \w K{elvin} in \w A{bsolute} \w Z{ero}
+%     \item 0 \w I{}  in \w P{}
+     \item 0.20787... $=?^?$
+     \item 0.45 \w T{roy} \w O{unces} in a 14 \w G{rammes} of \w G{old}
+    \item 1 \w H{orn} on a \w U{nicorn}
+    \item 1 \w G{iant} \w S{tep} \w F{or} \w M{ankind}
+    \item 1 \w B{ell} at \w W{estminster}
+    \item 1 \w R{ing} in a \w L{ord's} \w B{ell}
+%    \item 1 \w M{ile} of \w D{istance}
+    \item 1 \w W{orld} in the \w U{niverse}
+%     \item 1 \w P{ole}  in the \w W{orld}
+%     \item 1 \w H{}  of \w I{}
+%     \item 1 \w A{}  for the \w O{}
+    \item 1 \w P{artridge} in a \w P{ear} \w T{ree}
+    \item 2 \w M{uch} \w S{alad}
+    \item 2 \w L{ines} in a \w C{ouplet}
+    \item 2 \w T{urtle} \w D{oves}
+    \item 3 \w L{ights} on a \w T{raffic} \w L{ight}
+    \item 3 \w W{heels} on a \w T{ricycle}
+    \item 3 \w M{ovements} of a \w B{allet}
+    \item 3 \w C{olors} \w C{ones} in the \w H{uman} \w E{ye}
+    \item 3 \w S{tooges} in a \w T{rio}
+    \item 3 \w F{ingers} in a \w B{owling} \w B{all}
+    \item 3 \w D{imensions} of \w S{pace}
+     \item 3 \w N{umerical} \w V{alue} of a \w M{onkey}  \w T{rap} in \w P{ythagorean} \w N{umerology}
+    \item 3 \w L{ayers}  in a \w T{riple} \w B{urger}
+    \item 3 \w B{lind} \w M{ice}
+    \item 3 \w C{oins} in a \w F{ountain}
+	\item 3 \w F{rench} \w H{ens}
+    \item 4 \w S{ides} on a \w T{riangle}
+    \item 4 \w Q{uarters} in a \w D{ollar}
+    \item 4 \w H{orsemen} of the \w A{pocalypse}
+    \item 4 \w C{orners} in a \w W{indow}
+    \item 4 \w W{heels} on an \w E{state} \w C{ar}
+     \item 4 \w L{etters}  in \w Y{oga} (many answers)
+    \item 4 \w H{e's} a \w J{olly} \w G{ood} \w F{ellow}
+	\item 4 \w C{alling} \w B{irds}
+    \item 5 \w F{ingers} on a \w H{and}
+    \item 5 \w R{ings} in the \w O{lympics}
+    \item 5 \w S{ides} in a \w P{entagon}
+    \item 5 \w G{ospels} in the \w P{entateuch}
+	\item 5 \w G{old} \w R{ings}
+    \item 6 \w W{ives} of \w H{enry} the \w E{ighth}
+    \item 6 \w S{ides} on a \w C{ube}
+    \item 6 \w C{haracters} in a \w P{ost} \w C{ode}
+    \item 6 \w F{eet} \w U{nder}
+    \item 6 \w F{aces} on an \w I{ce} \w C{ube}
+    \item 6 \w F{aces} of \w S{nowflakes}
+    \item 6 \w F{aces}  in a \w T{etrahedron}
+%    \item 6 \w P{}  of the \w D{}
+    \item 6 \w C{hapters}  in the \w H{exateuch}
+    \item 6 \w S{trings} in a \w G{uitar}
+	\item 6 \w G{eese} \w A{-laying}
+    \item 7 \w D{ays} of the \w W{eek}
+    \item 7 \w C{olors} of the \w R{ainbow}
+    \item 7 \w W{onders} of the \w A{ncient} \w W{orld}
+    \item 7 \w H{ills} of \w R{ome}
+    \item 7 \w C{andles} in the \w H{anukkah} \w M{enorah}
+%     \item 7 \w S{}  of the \w U{}
+    \item 7 \w B{rides} for \w S{even} \w B{rothers}
+	\item 7 \w S{wans} \w A{-swimming}
+    \item 8 \w T{entacles} on an \w O{ctopus}
+    \item 8 \w S{ides} in an \w O{ctagon}
+    \item 8 \w B{its} in a \w B{yte}
+	\item 8 \w M{aids} \w A{-milking}
+    \item 9\!\!\!$\backslash$8 \w P{lanets} in the \w S{olar} \w S{ystem}
+    \item 9 \w L{ives} of a \w C{at}
+    \item 9 \w M{uses} of \w P{oetry}
+	\item 9 \w L{adies} \w D{ancing}
+    \item 10 \w Y{ears} in a \w D{ecade}
+    \item 10 \w C{ommandments} of \w C{hristianity}
+     \item 10 \w L{ayers}  in an \w A{atmosphere} \w S{tratum}
+	\item 10 \w \w L{ords} \w A{-leaping}
+    \item 11 \w P{layers} in a \w F{ootball} \w T{eam}
+    \item 11 \w P{layers}  in a \w C{ricket} \w T{eam}
+	\item 11 \w P{ipers} \w P{iping}
+    \item 12 \w M{onths} in a \w Y{ear}
+    \item 12 \w E{ggs} in a \w D{ozen}
+    \item 12 \w S{igns} of the \w Z{odiac}
+	\item 12 \w A{ngry} \w M{en}
+	\item 12 \w D{rummers} \w D{rumming}
+    \item 13 \w S{tripes} on the \w U{nited} \w S{tates} \w F{lag}
+%    \item 13 \w B{ends} in a \w B{rook}
+     \item 13 \w L{evels}  of the \w J{ourney}
+    \item 14 \w L{ines} in a \w S{hakespearian} \w S{onnet}
+    \item 15 \w P{layers} in a \w R{ugby} \w T{eam}
+    \item 15 \w M{en} on a \w D{ead} \w M{an's} \w C{hest}
+    \item 16 \w O{unces} in a \w P{ound}
+	\item 16 \w G{oing} \w O{n} 17
+    \item 18 \w H{oles} on a \w G{olf} \w C{ourse}
+    \item 21 \w G{rams} of \w S{oul}
+	\item 21 \w J{ump} \w S{treet}
+    \item 24 \w H{ours} in a \w D{ay}
+    \item 24 \w C{arats} in \w P{ure} \w G{old}
+    \item 27 \w C{ountries} in \w N{ATO}
+	\item 28 \w D{ays} \w L{ater}
+    \item 29 \w D{ays} in \w F{ebruary} in a \w L{eap} \w Y{ear}
+    \item 31 \w B{askin} \w R{obbins} \w F{lavors}
+    \item 32 \w T{eeth} in \w H{uman} \w M{outh}
+    \item 40 \w C{hapters} in the \w O{ld} \w T{estament}
+%     \item 40 \w D{ays}  and \w N{ights}  of \w N{oah}
+%    \item 42 \w G{enerations} of \w I{srael}
+    \item 4 \w C{rosses} on the \w U{nion} \w F{lag}
+    \item 50 \w P{oints} for a \w B{ullseye} on a \w D{artboard}
+	\item 50 \w F{irst} \w D{ates}
+    \item 52 \w W{eeks} in a \w Y{ear}
+    \item 54 \w C{ards} in a \w D{eck} (\w W{ith} \w J{okers})
+    \item 64 \w S{quares} on a \w C{hess} \w B{oard}
+    \item 74 \w C{olors} on a \w R{ainbow}
+    \item 88 \w K{eys} on a \w P{iano}
+    \item 90 \w D{egrees} in a \w R{ight} \w A{ngle}
+    \item 100 \w C{entissimi} in an \w I{talian} \w E{uro}
+     \item 100 \w Z{eroes} in a \w G{oogleplex}
+	\item 127 \w H{ours}
+    \item 206 \w B{ones} in the \w H{uman} \w B{ody}
+    \item 221 \w B{aker} \w S{treet}
+	\item 300 \w S{partans}
+    \item 365 \w D{ays} in an \w O{rdinary} \w Y{ear}
+    \item 365.25 \w D{ays}  in a \w Y{ear}
+    \item 366 \w D{ays} in a \w L{eap} \w Y{ear}
+    \item 500 \w P{ages} of a \w C{odex}
+    \item 1000 \w W{ords} that a \w P{icture} is \w W{orth}
+    \item 1440 \w M{inutes}  in a \w D{ay}
+	\item 1917
+	\item 2001 A \w S{pace} \w O{dyssey}
+     \item 5280 \w F{eet}  in a \w M{ile}
+    \item 86164.0905 \w S{econds} in a \w S{idereal} \w D{ay}
+	\item 5550690 1st \w P{hone} \w N{umber} \w T{raced} in \w T{he} \w M{atrix}
+     \item 43252003274489856000 \w S{tates} of an \w O{riginal} \w R{ubric's} \w C{ube}
+\end{description}
+
+\subsection*{Recursion}
+
+\begin{enumerate}[label=\arabic*,resume]
+\item \w P{uzzles} in \w{T}{his} \w P{uzzle}
+\end{enumerate}
+\end{multicols}
+
+\end{document}

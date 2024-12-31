@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e3c72; /* Deep blue */
+            color: #ffffff;
+            background: linear-gradient(180deg, #1e3c72 0%, #2a5298 100%); /* Festive gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigation Menu */
+        nav {
+            width: 100%;
+            background-color: #d92027; /* Christmas red */
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Festive gold */
+        }
+
+        /* App Container */
+        #app {
+            text-align: center;
+            padding: 20px;
+            border: 3px solid #ffffff;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.85); /* Transparent white */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        /* Title */
+        #app h1 {
+            font-size: 2.5em;
+            color: #d92027; /* Christmas red */
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        /* Buttons */
+        button {
+            background-color: #28a745; /* Christmas green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+//            text-transform: uppercase;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        /* Text Fields */
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border: 2px solid #d92027; /* Festive red */
+            border-radius: 5px;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        /* Messages */
+        #app p {
+            font-size: 1.2em;
+            color: #333333;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Christmas Decorations */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('image.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.6; /* Slightly muted */
+        }
+    </style>
+	<script src="opuzzles.js" defer></script></head>
+<body>
+    <nav>
+        <a href="#" onclick="showPage('app')">Home</a>
+        <a href="#" onclick="showPage('instructions')">Instructions</a>
+    </nav>
+    <div id="app">
+        <h1>The Jigsword!</h1>
+        <div id="puzzle-container"></div>
+    </div>
+    <div id="instructions" style="display: none;">
+    <div style="
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        max-width: 600px;
+        margin: 20px auto;
+        text-align: center;
+    ">
+        <h1 style="color: #d92027; text-shadow: 1px 1px 2px #000;">Instructions</h1>
+        <p style="color: #333;">Welcome to the Xmas 2024 Jigsword!</p>
+
+        <p style="color: #333;">Long ago, in the Realm of Ideas, where creativity flourished and chaos thrived, a celestial artisan sought to craft the ultimate enigma. They gathered fragments from the great Cosmic Puzzle, shards of logic, imagination, and wit, and forged them into a blade called the Jigsword. This mystical sword was said to hold the power to carve reality into riddles and reshape understanding into solutions.</p>
+        <p style="color: #333;">
+
+The artisan tested their creation by cleaving the stars themselves, scattering pieces of their light across the cosmos. Each star became a puzzle, challenging wanderers to assemble the fragments of their meaning. But the Jigsword demanded balance; it would only reveal its brilliance when wielded by those who sought not to conquer but to understand.</p>
+        <p style="color: #333;">
+
+Legends say the Jigsword was gifted to mortals as a sacred challenge. Those who could solve its riddles unlocked profound truths, while the unsolved pieces remained as sparks of wonder, igniting the imagination of future seekers.</p>
+        <p style="color: #333;">
+
+Today, every Jigsword puzzle is a fragment of this celestial legacy, a shard of cosmic light waiting to be pieced together. With each solution, we carry forward the artisan’s dream: a universe woven with the threads of curiosity and discovery.</p>
+        <p style="color: #333;"></p>
+        <p style="color: #333;">Solve the puzzles by entering the correct answers in the text box.</p>
+        <p style="color: #333;">Click submit, and if you're correct, you'll unlock new puzzles.</p>
+        <p style="color: #333;">Some solved puzzles come with a clue that might help with other puzzles.</p>
+        <p style="color: #333;">Make sure to write the clues down, as once they're gone, they're gone.</p>
+        <p style="color: #333;">Good luck and have fun!</p>
+    </div>
+</div>
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.getElementById('app').style.display = 'none';
+            document.getElementById('instructions').style.display = 'none';
+            // Show the requested section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

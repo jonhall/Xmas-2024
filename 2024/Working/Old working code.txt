@@ -1,0 +1,428 @@
+Javascript – 2024-12-26
+
+// Ensure the setup object exists
+if (typeof setup === 'undefined') {
+    setup = {};
+}
+
+// Define all puzzles
+window.puzzles = [
+    { puzzle: "1 is not a P N", answer: "1 is not a Prime Number", number: 1, isSolved: false, clue: "The 12 days of Christmas" },
+    { puzzle: "1 B at W", answer: "1 Bell at Westminster", number: 1, isSolved: false, clue: "Neil, is that you?" },
+    { puzzle: "2 L in a R C", answer: "2 Lines in a Rhyming Couplet", number: 2, isSolved: false, clue: "Shakespeare would have no problem with this" },
+    // Add more puzzles here...
+];
+
+// Utility: Get all puzzles required to unlock the given puzzle
+setup.getDivisors = function (number) {
+    return window.puzzles.filter(p => Number.isInteger(number / p.number) && number !== p.number);
+};
+
+// Utility: Check if all puzzles are solved
+setup.areAllPuzzlesSolved = function () {
+    return window.puzzles.every(puzzle => puzzle.isSolved);
+};
+
+// Utility: Check if a puzzle is visible
+setup.isVisible = function (number) {
+    const puzzle = window.puzzles.find(p => p.number === number);
+    if (!puzzle) return false;
+
+    // Non-integer puzzles are always visible
+    if (!Number.isInteger(number)) {
+        return true;
+    }
+
+    const divisors = setup.getDivisors(number);
+    return divisors.every(divisor => {
+        const divisorSet = window.puzzles.filter(p => p.number === divisor.number);
+        return divisorSet.every(p => p.isSolved);
+    });
+};
+
+// Create puzzle passages dynamically
+setup.createPuzzlePassages = function () {
+    window.puzzles.forEach(puzzle => {
+        if (setup.isVisible(puzzle.number) && !puzzle.isSolved && !Story.has(`Puzzle ${puzzle.puzzle}`)) {
+            Story.add({
+                name: `Puzzle ${puzzle.puzzle}`,
+                tags: "puzzle",
+                text: `
+                    <div class="puzzle-container">
+                        <h2>Solve this Puzzle:</h2>
+                        <p class="puzzle-text">${puzzle.puzzle}</p>
+                        <div id="clue-container">
+                            ${puzzle.isSolved ? `<p><strong>Your clue:</strong> ${puzzle.clue}. Write it down!</p>` : ""}
+                        </div>
+                        <label for="answer">Your Answer:</label>
+                        <<textbox "$answer" "${puzzle.number}">>
+                        <div class="submit-button-container">
+                            <<button "Submit">>
+                                <<replace "#feedback">>
+                                    <<if $answer.trim().toLowerCase() === "${puzzle.answer.toLowerCase()}">>
+                                        <p id="feedback">🎉 Correct! Puzzle ${puzzle.number} is complete.</p>
+                                        <p><b>Your clue:</b> ${puzzle.clue}. Write it down!</p>
+                                        <<run window.puzzles.find(p => p.puzzle === "${puzzle.puzzle}").isSolved = true>>
+                                        <<run setup.createPuzzlePassages()>>
+                                        <<run setup.updatePuzzleList()>>
+                                        <<goto "Main Menu">>
+                                    <<else>>
+                                        <p id="feedback">❌ Incorrect. Please try again!</p>
+                                    <</if>>
+                                <</replace>>
+                            <</button>>
+                        </div>
+                        <div id="feedback"></div>
+                        [[Back to Puzzle List->Puzzle List]]
+                    </div>
+                `,
+            });
+        }
+    });
+};
+
+// Create the splash screen when all puzzles are solved
+setup.createSplashScreen = function () {
+    if (setup.areAllPuzzlesSolved() && !Story.has("Main Menu")) {
+        Story.add({
+            name: "Main Menu",
+            tags: "",
+            text: `
+                <div class="splash-screen">
+                    <h1>🎉 Congratulations! 🎉</h1>
+                    <p>You have solved all the puzzles! Thank you for playing.</p>
+                    [[Restart the Game->Start]]
+                </div>
+            `,
+        });
+    }
+};
+
+// Update the Puzzle List dynamically
+setup.updatePuzzleList = function () {
+    if (setup.areAllPuzzlesSolved()) {
+        setup.createSplashScreen();
+        return;
+    }
+
+    const puzzleList = window.puzzles
+        .filter(puzzle => setup.isVisible(puzzle.number) && !puzzle.isSolved)
+        .sort((a, b) => a.number - b.number)
+        .map(puzzle => `
+            <div class="puzzle-item">
+                [[Puzzle ${puzzle.puzzle}]]
+            </div>
+        `)
+        .join("");
+
+    if (Story.has("Puzzle List")) {
+        Story.delete("Puzzle List");
+    }
+
+    Story.add({
+        name: "Puzzle List",
+        tags: "",
+        text: `
+            <div class="puzzle-list-container">
+                <h2>Available Puzzles:</h2>
+                <div class="puzzle-list">
+                    ${puzzleList || "<p>No puzzles available yet. Keep solving to unlock more!</p>"}
+                </div>
+            </div>
+        `,
+    });
+};
+
+// Initialize the game
+setup.updatePuzzleList();
+setup.createPuzzlePassages();
+
+
+Style sheet – 2024-12-26
+
+/* Instructions Styling */
+.instructions-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border: 2px dashed #007BFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.instructions-container h2 {
+    text-align: center;
+    color: #d9534f; /* Festive red */
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.instructions-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #5cb85c; /* Festive green */
+}
+
+.instructions-list {
+    list-style: decimal;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.instructions-list li {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.instructions-list ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.instructions-list ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.instructions-container b {
+    color: #007BFF;
+}
+
+.instructions-container em {
+    color: #d9534f; /* Festive red */
+    font-style: italic;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Main Menu Styling */
+.main-menu-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border: 2px dashed #d9534f; /* Festive red */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.main-menu-container h1 {
+    font-size: 2.2rem;
+    color: #007BFF; /* Festive blue */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main-menu-container p {
+    font-size: 1.2rem;
+    color: #5cb85c; /* Festive green */
+    margin-bottom: 20px;
+}
+
+.puzzle-list-container {
+    margin: 20px 0;
+}
+
+.puzzle-list-container h2 {
+    font-size: 1.5rem;
+    color: #d9534f; /* Festive red */
+    margin-bottom: 15px;
+}
+
+.puzzle-list {
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.puzzle-list a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.puzzle-list a:hover {
+    text-decoration: underline;
+}
+
+.footer-message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #d9534f; /* Festive red */
+    font-style: italic;
+}
+
+/* Puzzle List Styling */
+.puzzle-list-container {
+    background-color: #fff;
+    border: 2px solid #007BFF; /* Festive blue */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.puzzle-list-container h2 {
+    font-size: 1.5rem;
+    color: #d9534f; /* Festive red */
+    margin-bottom: 15px;
+}
+
+.puzzle-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.puzzle-item {
+    background-color: #f8f9fa; /* Light festive background */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 200px;
+}
+
+.puzzle-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.puzzle-item a {
+    text-decoration: none;
+    color: #007BFF; /* Festive blue */
+    font-weight: bold;
+}
+
+.puzzle-item .puzzle-name {
+    color: #d9534f; /* Festive red */
+}
+
+.puzzle-item:hover a {
+    color: #d9534f; /* Red hover effect */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.puzzle-container {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.puzzle-list-container {
+    padding: 10px;
+}
+
+.puzzle-list .puzzle-item {
+    margin: 10px 0;
+}
+
+.puzzle-list .puzzle-name {
+    font-weight: bold;
+    color: #0073e6;
+}
+
+.submit-button-container {
+    margin-top: 15px;
+}
+
+.splash-screen {
+    text-align: center;
+    padding: 50px;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 10px;
+}
+
+.splash-screen h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.splash-screen p {
+    font-size: 1.2em;
+}
+
+Main menu - 2024-12-26
+<div class="main-menu-container">
+    <h1>🎄 Welcome to the Christmas Puzzle Game! 🎅</h1>
+    <p>Ho ho ho! Ready to put your holiday brainpower to the test? Check out the instructions to learn how to play or dive right into the puzzles!</p>
+
+    <div class="menu-links">
+        [[View Instructions->Instructions]]<br>
+        [[Start Puzzling->Puzzle List]]
+    </div>
+
+    <div class="puzzle-list-container">
+        <h2>Available Puzzles:</h2>
+        <div class="puzzle-list">
+            <<run setup.updatePuzzleList()>>
+        </div>
+    </div>
+
+    <p class="footer-message">🎁 Good luck, and may your brain be as sharp as Rudolph's antlers! 🎁</p>
+</div>
+
+Instructions – 2024-12-26
+<div class="instructions-container">
+    <h2>🎄 Welcome to the Christmas Puzzle Extravaganza! 🎅</h2>
+    <p>Ho ho ho! The goal of this game is to solve festive puzzles and uncover hidden clues. Think of it as Santa's secret list, but with more riddles and fewer elves.</p>
+
+    <ol class="instructions-list">
+        <li><b>Main Menu:</b> 
+            - Here you’ll find a list of puzzles. 
+            - The more puzzles you solve, the more Santa will trust you with his secrets. 
+            - Yes, it’s like earning your spot on the "Nice List."
+        </li>
+        <li><b>Solving a Puzzle:</b>
+            <ul>
+                <li>Click on a puzzle from the list to get started.</li>
+                <li>Each puzzle is like a Christmas cracker—crack it open to find the answer (minus the bad jokes). 🎁</li>
+                <li>Type your answer in the box. Don’t worry, there’s no penalty for wrong answers, but Rudolph might judge you silently.</li>
+                <li>Click <b>Submit</b> to check if your answer is correct. Hint: Eggnog helps with tricky puzzles.</li>
+            </ul>
+        </li>
+        <li><b>Unlocking New Puzzles:</b> 
+            - Solving puzzles will unlock new ones. 
+            - Consider them like layers on an onion Christmas cake—you can’t get to the onion marzipan until you eat through the onion icing.
+        </li>
+        <li><b>Clues:</b>
+            <ul>
+                <li>If you solve a puzzle, you might uncover a clue. It’s like finding a shiny bauble in Santa’s sack – ahem.</li>
+                <li>You have only 5 econds to write down the clue somewhere safe—or on the back of a Christmas card. Your future self will thank you!</li>
+            </ul>
+        </li>
+        <li><b>Finishing the Game:</b> 
+            - Solve all puzzles to win. 
+            - You’ll be greeted with a festive celebration (and maybe a mug of virtual hot cocoa). ☕
+        </li>
+    </ol>
+    <p><em>So grab your thinking Santa cap, and let’s get puzzling! 🎄</em></p>
+</div>
+
+[[Main Menu]]

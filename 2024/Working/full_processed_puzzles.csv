@@ -1,0 +1,124 @@
+Id,,puzzle,answer,number,isSolved,clue,Clue linked to
+1,,1 is not a P N,1 is not a Prime Number,1,FALSE,The 12 days of Christmas,6
+2,11,1 G B of the G C of W,1 Great Bell of the Great Clock of Westminster,1,FALSE,"Neil, is that you?",4
+3,29,1 H on a U,1 Horn on a Unicorn,1,FALSE,"Fly, you fools!",5
+4,2,1 G L for M,1 Giant Leap for Mankind,1,FALSE,Widow surrounds North,23
+5,3,1 R to R T A,1 Ring to Rule Them All,1,FALSE,uch alad,8
+6,1,1 P in a P T,1 Partridge in a Pear Tree,1,FALSE,"Shakespeare would have no problem with this, His answer would be poetic bliss.",7
+7,6,2 L in a R C,2 Lines in a Rhyming Couplet,2,FALSE,Ice,12
+8,5,2 M S,2 Much Salad,2,FALSE,What a mouth,9
+9,8,"2 P, N and S","2 Poles, North and South",2,FALSE,rides even rot hers,46
+10,118,2 L on a D,2 Legs on a Duck,2,FALSE,"008C45, F4F9FF, CD212A",18
+11,,2 T D,2 Turtle Doves,2,FALSE,"It’s big, it’s called Ben.",2
+12,7,3 B M,3 Blind Mice,3,FALSE,rosses ,24
+13,,3 C C in the H E,3 Colour Cones in the Human Eye,3,FALSE,"um er i cal, a lue…on key rap? Yth ago rean, um, er, o log(y)",19
+14,15,3 D of S,3 Dimensions of Space,3,FALSE,", Now!",25
+15,,3 F H,3 French Hens,3,FALSE,"Before Einstein, anyway",14
+16,28,3 F H in a B B,3 Finger Holes in a Bowling Ball,3,FALSE,,
+17,,3 L on a T L,3 Lights on a Traffic Light,3,FALSE,Should be 3,28
+18,10,3 C on the I F,3 Colours on the Italian Flag,3,FALSE,an overly sensitive or easily offended person,38
+19,13,3 N V of a M T in P N,3 Numerical Value of a Monkey Trap in Pythagorean Numerology,3,FALSE,State AR,29
+20,45,3 S in a T,3 Stooges in a Trio,3,FALSE,"Or Yoyo, or Yoda",26
+21,,3 W on a T,3 Wheels on a Tricycle,3,FALSE,lag,24
+22,,4 C B,4 Calling Birds,4,FALSE,Shall I compare thee to a summers day?,76
+23,4,4 C in a W,4 Corners in a Window,4,FALSE,"When we go, it’s Valentine’s Day",43
+24,12,4 C on the U F,4 Crosses on the Union Flag,4,FALSE,It's good news,31
+25,14,4 H of the A,4 Horsemen of the Apocalypse,4,FALSE,Could call puzzle currency into question?,27
+26,20,4 L in Y,4 Letters in Yoga,4,FALSE,It’s not spelled owels,34
+27,25,4 Q in a D,4 Quarters in a Dollar,4,FALSE,"D, B, D, D, B, S",44
+28,17,4 S on a T,4 Sides on a Triangle,4,FALSE,That’s a strike,16
+29,19,4 W on an E C,4 Wheels on an Estate Car,4,FALSE,"Probably a rhinoceros, thinking about it?",3
+30,,5 F on a H,5 Fingers on a Hand,5,FALSE,the Torah and the book of Joshua,36
+31,24,5 G in the P,5 Gospels in the Pentateuch,5,FALSE,Formicidae,37
+32,,5 G R,5 Gold Rings,5,FALSE,Bill meets Poe,40
+33,,5 R in the O,5 Rings in the Olympics,5,FALSE,,
+34,26,5 L in the A are V,5 Letters in the Alphabet are Vowels,5,FALSE,,
+35,,5 S in a P,5 Sides in a Pentagon,5,FALSE,P scooted,45
+36,30,6 C in the H,6 Chapters in the Hexateuch,6,FALSE,,
+37,31,6 L on an A,6 Legs on an Ant,6,FALSE,,
+38,18,6 P on a S,6 Points on a Snowflake,6,FALSE,"And less, shortly",47
+39,,6 F on a C,6 Faces on a Cube,6,FALSE,,
+40,32,6 F U,6 Feet Under,6,FALSE,,
+41,,6 G A,6 Geese A-laying,6,FALSE,,
+42,,6 S in a G,6 Strings in a Guitar,6,FALSE,Ills and Ides. ,50
+43,23,6 N S in J,6 Nations Starts in January,6,FALSE,,
+44,27,6 W of H the E,6 Wives of Henry the Eighth,6,FALSE,,
+45,35,7 C in your P C,7 Characters in your Post Code,7,FALSE,"tooges, Int’ Rio, you say?",20
+46,9,7 B for S B,7 Brides for Seven Brothers,7,FALSE,,
+47,38,7 C in the H M,7 Candles in the Hanukkah Menorah,7,FALSE,,
+48,,7 C of the R,7 Colors of the Rainbow,7,FALSE,,
+49,,7 D of the W,7 Days of the Week,7,FALSE,Since 2006,55
+50,42,7 H of R,7 Hills of Rome,7,FALSE,,
+51,,7 S A,7 Swans A-swimming,7,FALSE,,
+52,,7 W of the A W,7 Wonders of the Ancient World,7,FALSE,Until 2006,61
+53,,8 B in a B,8 Bits in a Byte,8,FALSE,,
+54,,8 M A,8 Maids A-milking,8,FALSE,A rhyming band?,60
+55,49,8 P in the S S,8 Planets in the Solar System,8,FALSE,,
+56,,8 S in an O,8 Sides in an Octagon,8,FALSE,Above cloud 9,64
+57,,8 T on an O,8 Tentacles on an Octopus,8,FALSE,,
+58,,9 L D,9 Ladies Dancing,9,FALSE,,
+59,,9 L of a C,9 Lives of a Cat,9,FALSE,,
+60,54,9 M of P,9 Muses of Poetry,9,FALSE,But we don’t talk about that…,67
+61,52,9 P in the S S,9 Planets in the Solar System,9,FALSE,…or that,66
+62,,10 C of C,10 Commandments of Christianity,10,FALSE,,
+63,,10 L A,10 Lords A-leaping,10,FALSE,"They might sound hungry, but that’s not right",69
+64,56,10 L in an A S,10 Layers in an Atmosphere Stratum,10,FALSE,,
+65,,10 Y in a D,10 Years in a Decade,10,FALSE,,
+66,61,11 P in a C T,11 Players in a Cricket Team,11,FALSE,,
+67,60,11 P in a F T,11 Players in a Football Team,11,FALSE,,
+68,,11 P P,11 Pipers Piping,11,FALSE,#3’s the best,77
+69,63,12 A M,12 Angry Men,12,FALSE,,
+70,,12 D D,12 Drummers Drumming,12,FALSE,,
+71,,12 E in a D,12 Eggs in a Dozen,12,FALSE,,
+72,,12 M in a Y,12 Months in a Year,12,FALSE,"Born, Italy, 1949",87
+73,,12 S of the Z,12 Signs of the Zodiac,12,FALSE,,
+74,,12 D of C,12 Days of Christmas,12,FALSE,,
+75,,13 L in a B D,13 Loaves in a Baker’s Dozen,13,FALSE,,
+76,22,14 L in a S S,14 Lines in a Shakespearian Sonnet,14,FALSE,"Eat less, shortly",81
+77,68,15 P in a R T,15 Players in a Rugby Team,15,FALSE,,
+78,,16 G O S,16 Going On Seventeen,16,FALSE,Rams of Oul,82
+79,,16 O in a P,16 Ounces in a Pound,16,FALSE,,
+80,,18 H on a G C,18 Holes on a Golf Course,18,FALSE,,
+81,76,20 A R by the B,20 Albums Released by the Beatles,20,FALSE,,
+82,78,21 G of S,21 Grams of Soul,21,FALSE,,
+83,,21 J S,21 Jump Street,21,FALSE,"Oh, Danny Boyle, the pipes, the pipes are calling",88
+84,,23 P of C in the H B,23 Pairs of Chromosomes in the Human Body,23,FALSE,,
+85,,24 C in P G,24 Carats in Pure Gold,24,FALSE,,
+86,,24 H in a D,24 Hours in a Day,24,FALSE,Ask in any ice-cream shop,90
+87,72,27 C in N,27 Countries in NATO,27,FALSE,,
+88,83,28 D L,28 Days Later,28,FALSE,Clowns to the left…,98
+89,,29 D in F in a L Y,29 Days in February in a Leap Year,29,FALSE,,
+90,86,31 B R F,31 Baskin Robbins Flavors,31,FALSE,,
+91,,32 T in the H M,32 Teeth in the Human Mouth,32,FALSE,,
+92,,40 C in the O T,40 Chapters in the Old Testament,40,FALSE,"Film ours, not real ones",106
+93,,50 F D,50 First Dates,50,FALSE,,
+94,,50 P for a B on a D,50 Points for a Bullseye on a Dartboard,50,FALSE,Doesn't buy much sausage these days,103
+95,,50 S on the A F,50 Stars on the American Flag,50,FALSE,Doesn’t buy much salami these days,104
+96,,52 C in a D (W J),52 Cards in a Deck (Without Jokers),52,FALSE,,
+97,,52 W in a Y,52 Weeks in a Year,52,FALSE,,
+98,88,54 C in a D (W J),54 Cards in a Deck (With Jokers),54,FALSE,,
+99,,64 S on a C B,64 Squares on a Chess Board,64,FALSE,No sh*t Sherlock,109
+100,,7 C in the R,7 Colors in the Rainbow,7,FALSE,Give me an A!,114
+101,,88 K on a P,88 Keys on a Piano,88,FALSE,How far?,115
+102,,90 D in a R A,90 Degrees in a Right Angle,90,FALSE,,
+103,94,100 P in a P,100 Pennies in a Pound,100,FALSE,"Trinity, what was that number again?",123
+104,95,100 C in an I E,100 Centesimi in an Italian Euro,100,FALSE,,
+105,,100 Z in a G,100 Zeroes in a Googleplex,100,FALSE,Intellectual property + software,121
+106,92,127 H,127 Hours,127,FALSE,,
+107,,169 = T S,169 = Thirteen Squared,169,FALSE,,
+108,,206 B in the H B,206 Bones in the Human Body,206,FALSE,"His son, Christian, was very upset.",118
+109,99,221 B S,221 Baker Street,221,FALSE,,
+110,,300 S,300 Spartans,300,FALSE,,
+111,,365 D in an O Y,365 Days in an Ordinary Year,365,FALSE,,
+112,,365.25 D in a Y,365.25 Days in a Year,365,FALSE,,
+113,,366 D in a L Y,366 Days in a Leap Year,366,FALSE,,
+114,100,440 H for T,440 Hertz for Tuning,440,FALSE,,
+115,101,500 M,500 Miles,500,FALSE,,
+116,,1000 W that a P is W,1000 Words that a Picture is Worth,1000,FALSE,,
+117,,1440 M in a D,1440 Minutes in a Day,1440,FALSE,,
+118,108,1685 the Y that J S B D,1685 the Year that Johann Sebastian Bach Died,1685,FALSE,Flew off,10
+119,,2001 A S O,2001 A Space Odyssey,2001,FALSE,,
+120,,5280 F in a M,5280 Feet in a Mile,5280,FALSE,,
+121,105,71282 is the Z for M P,71282 is the Zipcode for Madison Parish,71282,FALSE,,
+122,,86164.0905 S in a S D,86164.0905 Seconds in a Sidereal Day,86164,FALSE,,
+123,103,5550690 1st P N T in T M,5550690 1st Phone Number Traced in The Matrix,5550690,FALSE,,
