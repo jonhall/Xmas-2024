@@ -237,7 +237,7 @@ function showPuzzle(puzzle) {
     container.appendChild(backButton);
 }
 
-// STEP 6: Check the user's answer
+// STEP Stateful.3: Automatically save state when a puzzle is solved
 function checkAnswer(puzzle) {
     const userAnswer = document.getElementById("puzzle-answer").value.trim();
 
@@ -246,27 +246,22 @@ function checkAnswer(puzzle) {
         return;
     }
 
-    // Remove punctuation from the user's answer
-    const sanitizedAnswer = userAnswer.replace(/[^a-zA-Z0-9\s]/g, "").toLowerCase();
-
-    // Remove punctuation from the puzzle's correct answer for comparison
-    const sanitizedCorrectAnswer = puzzle.answer.replace(/[^a-zA-Z0-9\s]/g, "").toLowerCase();
+    const sanitizedAnswer = userAnswer.replace(/[^\w\s]/gi, "").toLowerCase();
+    const sanitizedCorrectAnswer = puzzle.answer.replace(/[^\w\s]/gi, "").toLowerCase();
 
     if (sanitizedAnswer === sanitizedCorrectAnswer) {
-    puzzle.isSolved = true; // Mark the puzzle as solved
-
-    // Check if there is a clue
-    if (puzzle.clue && puzzle.clue.trim() !== "") {
-        alert(`Correct! Clue: ${puzzle.clue}`);
+        puzzle.isSolved = true; // Mark the puzzle as solved
+        if (puzzle.clue && puzzle.clue.trim() !== "") {
+            alert(`Correct! Clue: ${puzzle.clue}`);
+        } else {
+            alert("Correct! No clue available for this puzzle.");
+        }
+        updatePuzzleVisibility(); // Update visibility of subsequent puzzles
+        renderAvailablePuzzles(); // Re-render available puzzles
+        savePuzzleState(); // Save the updated state
     } else {
-        alert("Correct!");
+        alert("Incorrect. Try again!");
     }
-
-    updatePuzzleVisibility(); // Update visibility of subsequent puzzles
-    renderAvailablePuzzles(); // Re-render available puzzles
-} else {
-    alert("Incorrect. Try again!");
-}
 }
 
 // STEP 7: Initialize the game
@@ -276,6 +271,50 @@ document.addEventListener("DOMContentLoaded", () => {
         <h1>Puzzle Game</h1>
         <div id="puzzle-container"></div>
     `;
+    updatePuzzleVisibility(); // Initialize visibility
+    renderAvailablePuzzles();
+});
+
+// STEP Stateful.1: Save the state of puzzles
+function savePuzzleState() {
+    const stateToSave = puzzles.map(({ puzzle, answer, number, isSolved, clue }) => ({
+        puzzle,
+        answer,
+        number,
+        isSolved,
+        clue,
+    }));
+    localStorage.setItem('puzzleState', JSON.stringify(stateToSave));
+    console.log("Puzzle state saved:", stateToSave);
+}
+
+// STEP Stateful.2: Load the state of puzzles
+function loadPuzzleState() {
+    const savedState = localStorage.getItem('puzzleState');
+    if (savedState) {
+        const parsedState = JSON.parse(savedState);
+        puzzles.forEach((puzzle, index) => {
+
+            const savedPuzzle = parsedState.find(p => p.puzzle === puzzle.puzzle);
+                   console.log(savedPuzzle);
+            if (savedPuzzle) {
+                puzzles[index].isSolved = savedPuzzle.isSolved;
+            }
+        });
+        console.log("Puzzle state loaded:", puzzles);
+    } else {
+        console.log("No saved puzzle state found.");
+    }
+}
+
+// STEP Stateful.4: Initialize the game and load the state
+document.addEventListener("DOMContentLoaded", () => {
+    const appContainer = document.getElementById("app");
+    appContainer.innerHTML = `
+        <h1>Puzzle Game</h1>
+        <div id="puzzle-container"></div>
+    `;
+    loadPuzzleState(); // Load state on page load
     updatePuzzleVisibility(); // Initialize visibility
     renderAvailablePuzzles();
 });
